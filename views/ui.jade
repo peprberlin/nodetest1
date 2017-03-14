@@ -1,0 +1,395 @@
+extends layout
+block content
+  .row
+    .col-md-12
+      h2 UI Elements
+      h5 Welcome Jhon Deo , Love to see you back. 
+  // /. ROW
+  hr
+  .row
+    .col-md-7
+      .panel.panel-default
+        .panel-heading
+          | Simple Buttons Examples
+        .panel-body
+          h4 Default Button
+          a.btn.btn-default(href='#') default
+          a.btn.btn-primary(href='#') primary
+          a.btn.btn-danger(href='#') danger
+          a.btn.btn-success(href='#') success
+          a.btn.btn-info(href='#') info
+          a.btn.btn-warning(href='#') warning
+          h4 Mini Button
+          a.btn.btn-default.btn-xs(href='#') default
+          a.btn.btn-primary.btn-xs(href='#') primary
+          a.btn.btn-danger.btn-xs(href='#') danger
+          a.btn.btn-success.btn-xs(href='#') success
+          a.btn.btn-info.btn-xs(href='#') info
+          a.btn.btn-warning.btn-xs(href='#') warning
+          h4 Small Button
+          a.btn.btn-default.btn-sm(href='#') default
+          a.btn.btn-primary.btn-sm(href='#') primary
+          a.btn.btn-danger.btn-sm(href='#') danger
+          a.btn.btn-success.btn-sm(href='#') success
+          a.btn.btn-info.btn-sm(href='#') info
+          a.btn.btn-warning.btn-sm(href='#') warning
+          h4 Large Button
+          a.btn.btn-default.btn-lg(href='#') default
+          a.btn.btn-primary.btn-lg(href='#') primary
+          a.btn.btn-danger.btn-lg(href='#') danger
+          a.btn.btn-success.btn-lg(href='#') success
+          a.btn.btn-info.btn-lg(href='#') info
+    .col-md-5
+      .panel.panel-default
+        .panel-heading
+          | Button Dropdowns
+        .panel-body
+          h4 Simple Button Dropdown Examples 
+          div(style='margin-top: 10px;')
+            .btn-group
+              button.btn.btn-primary.dropdown-toggle(data-toggle='dropdown')
+                | Action 
+                span.caret
+              ul.dropdown-menu
+                li
+                  a(href='#') Action
+                li
+                  a(href='#') Another action
+                li
+                  a(href='#') Something else here
+                li.divider
+                li
+                  a(href='#') Separated link
+            .btn-group(style='margin:5px;')
+              button.btn.btn-danger.dropdown-toggle(data-toggle='dropdown')
+                | Danger 
+                span.caret
+              ul.dropdown-menu
+                li
+                  a(href='#') Action
+                li
+                  a(href='#') Another action
+                li
+                  a(href='#') Something else here
+                li.divider
+                li
+                  a(href='#') Separated link
+            .btn-group(style='margin:5px;')
+              button.btn.btn-warning.dropdown-toggle(data-toggle='dropdown')
+                | Danger 
+                span.caret
+              ul.dropdown-menu
+                li
+                  a(href='#') Action
+                li
+                  a(href='#') Another action
+                li
+                  a(href='#') Something else here
+                li.divider
+                li
+                  a(href='#') Separated link
+          div
+            .btn-group
+              button.btn.btn-success.dropdown-toggle(data-toggle='dropdown')
+                | Success 
+                span.caret
+              ul.dropdown-menu
+                li
+                  a(href='#') Action
+                li
+                  a(href='#') Another action
+                li
+                  a(href='#') Something else here
+                li.divider
+                li
+                  a(href='#') Separated link
+            .btn-group
+              button.btn.btn-info.dropdown-toggle(data-toggle='dropdown')
+                | Info 
+                span.caret
+              ul.dropdown-menu
+                li
+                  a(href='#') Action
+                li
+                  a(href='#') Another action
+                li
+                  a(href='#') Something else here
+                li.divider
+                li
+                  a(href='#') Separated link
+            .btn-group
+              button.btn.btn-default.dropdown-toggle(data-toggle='dropdown')
+                | Default 
+                span.caret
+              ul.dropdown-menu
+                li
+                  a(href='#') Action
+                li
+                  a(href='#') Another action
+                li
+                  a(href='#') Something else here
+                li.divider
+                li
+                  a(href='#') Separated link
+          h4 Split Button Dropdown Examples 
+          .btn-toolbar(style='margin:5px;')
+            .btn-group
+              button.btn.btn-primary Action
+              button.btn.btn-primary.dropdown-toggle(data-toggle='dropdown')
+                span.caret
+              ul.dropdown-menu
+                li
+                  a(href='#') Action
+                li
+                  a(href='#') Another action
+                li
+                  a(href='#') Something else here
+                li.divider
+                li
+                  a(href='#') Separated link
+            .btn-group
+              button.btn.btn-danger Danger
+              button.btn.btn-danger.dropdown-toggle(data-toggle='dropdown')
+                span.caret
+              ul.dropdown-menu
+                li
+                  a(href='#') Action
+                li
+                  a(href='#') Another action
+                li
+                  a(href='#') Something else here
+                li.divider
+                li
+                  a(href='#') Separated link
+            .btn-group
+              button.btn.btn-warning Warning
+              button.btn.btn-warning.dropdown-toggle(data-toggle='dropdown')
+                span.caret
+              ul.dropdown-menu
+                li
+                  a(href='#') Action
+                li
+                  a(href='#') Another action
+                li
+                  a(href='#') Something else here
+                li.divider
+                li
+                  a(href='#') Separated link
+          .btn-toolbar(style='margin:5px;')
+            .btn-group
+              button.btn.btn-success Success
+              button.btn.btn-success.dropdown-toggle(data-toggle='dropdown')
+                span.caret
+              ul.dropdown-menu
+                li
+                  a(href='#') Action
+                li
+                  a(href='#') Another action
+                li
+                  a(href='#') Something else here
+                li.divider
+                li
+                  a(href='#') Separated link
+            .btn-group
+              button.btn.btn-info Info
+              button.btn.btn-info.dropdown-toggle(data-toggle='dropdown')
+                span.caret
+              ul.dropdown-menu
+                li
+                  a(href='#') Action
+                li
+                  a(href='#') Another action
+                li
+                  a(href='#') Something else here
+                li.divider
+                li
+                  a(href='#') Separated link
+          .btn-toolbar(style='margin:5px;')
+            .btn-group
+              button.btn.btn-default Default
+              button.btn.btn-default.dropdown-toggle(data-toggle='dropdown')
+                span.caret
+              ul.dropdown-menu
+                li
+                  a(href='#') Action
+                li
+                  a(href='#') Another action
+                li
+                  a(href='#') Something else here
+                li.divider
+                li
+                  a(href='#') Separated link
+          h4 Buttons With Icons
+          button.btn.btn-default
+            i.fa.fa-refresh
+            |  Update
+          button.btn.btn-primary
+            i.fa.fa-edit
+            |  Edit
+          button.btn.btn-danger
+            i.fa.fa-pencil
+            |  Delete
+  // /. ROW
+  .row
+    .col-md-6
+      .panel.panel-default
+        .panel-heading
+          | Circle Icon Buttons
+        .panel-body
+          br
+          br
+          button.btn.btn-default.btn-circle(type='button')
+            i.fa.fa-check
+          button.btn.btn-primary.btn-circle(type='button')
+            i.fa.fa-list
+          button.btn.btn-success.btn-circle(type='button')
+            i.fa.fa-link
+          button.btn.btn-info.btn-circle(type='button')
+            i.fa.fa-check
+          button.btn.btn-warning.btn-circle(type='button')
+            i.fa.fa-money
+          button.btn.btn-danger.btn-circle(type='button')
+            i.fa.fa-heart
+          br
+          p
+            | For more customization for this template or its components please visit official bootstrap website i.e getbootstrap.com or 
+            a(href='http://getbootstrap.com/components/', target='_blank') click here
+            |  . We hope you will enjoy our template. This template is easy to use, light weight and made with love by binarycart.com
+    .col-md-6
+      .panel.panel-default
+        .panel-heading
+          | Icons Examples :
+        .panel-body
+          br
+          i.fa.fa-desktop
+          i.fa.fa-desktop.fa-2x
+          i.fa.fa-desktop.fa-3x
+          i.fa.fa-desktop.fa-4x
+          i.fa.fa-desktop.fa-5x
+          br
+          br
+          i.fa.fa-flask
+          i.fa.fa-flask.fa-2x
+          i.fa.fa-flask.fa-3x
+          i.fa.fa-flask.fa-4x
+          i.fa.fa-flask.fa-5x
+          br
+          p
+            | For more customization Of icons please visit website : fortawesome.github.io/Font-Awesome/icons/ or  
+            a(href='http://fortawesome.github.io/Font-Awesome/icons/', target='_blank') Click here
+            |  . You will get all font-awesome icons and there classes there.
+  // /. ROW
+  .row
+    .col-md-6
+      .panel.panel-default
+        .panel-heading
+          | Simple Progress Bars
+        .panel-body
+          .progress
+            .progress-bar.progress-bar-success(role='progressbar', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100', style='width: 40%')
+              span.sr-only 40% Complete (success)
+          .progress
+            .progress-bar.progress-bar-info(role='progressbar', aria-valuenow='20', aria-valuemin='0', aria-valuemax='100', style='width: 20%')
+              span.sr-only 20% Complete
+          .progress
+            .progress-bar.progress-bar-warning(role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100', style='width: 60%')
+              span.sr-only 60% Complete (warning)
+          .progress
+            .progress-bar.progress-bar-danger(role='progressbar', aria-valuenow='80', aria-valuemin='0', aria-valuemax='100', style='width: 80%')
+              span.sr-only 80% Complete
+    .col-md-6
+      .panel.panel-default
+        .panel-heading
+          | Stripped Progress Bars
+        .panel-body
+          .progress.progress-striped
+            .progress-bar.progress-bar-success(role='progressbar', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100', style='width: 40%')
+              span.sr-only 40% Complete (success)
+          .progress.progress-striped
+            .progress-bar.progress-bar-info(role='progressbar', aria-valuenow='20', aria-valuemin='0', aria-valuemax='100', style='width: 20%')
+              span.sr-only 20% Complete
+          .progress.progress-striped
+            .progress-bar.progress-bar-warning(role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100', style='width: 60%')
+              span.sr-only 60% Complete (warning)
+          .progress.progress-striped
+            .progress-bar.progress-bar-danger(role='progressbar', aria-valuenow='80', aria-valuemin='0', aria-valuemax='100', style='width: 80%')
+              span.sr-only 80% Complete
+  // /. ROW
+  .row
+    .col-md-6
+      .panel.panel-default
+        .panel-heading
+          | Animated Progress Bars
+        .panel-body
+          .progress.progress-striped.active
+            .progress-bar.progress-bar-primary(role='progressbar', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100', style='width: 40%')
+              span.sr-only 40% Complete (success)
+    .col-md-6
+      .panel.panel-default
+        .panel-heading
+          | Stacked Progress Bars
+        .panel-body
+          .progress
+            .progress-bar.progress-bar-success(style='width: 35%')
+              span.sr-only 35% Complete (success)
+            .progress-bar.progress-bar-warning(style='width: 20%')
+              span.sr-only 20% Complete (warning)
+            .progress-bar.progress-bar-danger(style='width: 10%')
+              span.sr-only 10% Complete (danger)
+  // /. ROW
+  .row
+    .col-md-6
+      // Modals
+      .panel.panel-default
+        .panel-heading
+          | Modals Example
+        .panel-body
+          button.btn.btn-primary.btn-lg(data-toggle='modal', data-target='#myModal')
+            | Click  Launch Demo Modal
+          #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+            .modal-dialog
+              .modal-content
+                .modal-header
+                  button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+                  h4#myModalLabel.modal-title Modal title Here
+                .modal-body
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                .modal-footer
+                  button.btn.btn-default(type='button', data-dismiss='modal') Close
+                  button.btn.btn-primary(type='button') Save changes
+      // End Modals
+    .col-md-6
+      .panel.panel-default
+        .panel-heading
+          | Alerts Examples
+        .panel-body
+          h5
+            strong Simple Alert
+          .alert.alert-info
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            a.alert-link(href='#') Alert Link
+            | .
+          |                             Info: You can use other classes like 
+          i alert-success
+          |  , 
+          i alert-warning
+          |  & 
+          i alert-danger
+          |  instead of 
+          i alert-info
+          br
+          h5
+            strong Dismissable Alert
+          .alert.alert-info.alert-dismissable
+            button.close(type='button', data-dismiss='alert', aria-hidden='true') ×
+            |                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            a.alert-link(href='#') Alert Link
+            | .
+          |                             Info: You can use other classes like 
+          i alert-success
+          |  , 
+          i alert-warning
+          |  & 
+          i alert-danger
+          |  instead of 
+          i alert-info

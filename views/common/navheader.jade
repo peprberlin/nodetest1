@@ -1,0 +1,15 @@
+nav.navbar.navbar-default.navbar-cls-top(role='navigation', style='margin-bottom: 0')
+  .navbar-header
+    button.navbar-toggle(type='button', data-toggle='collapse', data-target='.sidebar-collapse')
+      span.sr-only Toggle navigation
+      span.icon-bar
+      span.icon-bar
+      span.icon-bar
+    a.navbar-brand(href='/') #{siteTitle}
+  div(style='color: white; padding: 15px 50px 5px 50px; float: right; font-size: 16px;')
+    if user 
+      | #{user.firstName} #{user.lastName} - Letztes Login : #{moment(user.dateLastLogin).format('DD.MM.YYYY')} 
+      a.btn.btn-danger.square-btn-adjust(href='/logout') Logout
+    else
+      a.btn.btn-danger.square-btn-adjust(href='/login') Login
+    

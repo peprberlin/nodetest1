@@ -1,0 +1,276 @@
+extends layout
+block content
+  .row
+    .col-md-12
+      h2 Admin Dashboard
+      h5 Welcome for the #{clicks} time
+  // /. ROW
+  hr
+  .row
+    .col-md-3.col-sm-6.col-xs-6
+      .panel.panel-back.noti-box
+        span.icon-box.bg-color-red.set-icon
+          i.fa.fa-envelope-o
+        .text-box
+          p.main-text 120 New
+          p.text-muted Messages
+    .col-md-3.col-sm-6.col-xs-6
+      .panel.panel-back.noti-box
+        span.icon-box.bg-color-green.set-icon
+          i.fa.fa-bars
+        .text-box
+          p.main-text 30 Tasks
+          p.text-muted Remaining
+    .col-md-3.col-sm-6.col-xs-6
+      .panel.panel-back.noti-box
+        span.icon-box.bg-color-blue.set-icon
+          i.fa.fa-bell-o
+        .text-box
+          p.main-text 240 New
+          p.text-muted Notifications
+    .col-md-3.col-sm-6.col-xs-6
+      .panel.panel-back.noti-box
+        span.icon-box.bg-color-brown.set-icon
+          i.fa.fa-rocket
+        .text-box
+          p.main-text 3 Orders
+          p.text-muted Pending
+  // /. ROW
+  hr
+  .row
+    .col-md-6.col-sm-12.col-xs-12
+      .panel.panel-back.noti-box
+        span.icon-box.bg-color-blue
+          i.fa.fa-warning
+        .text-box
+          p.main-text 52 Important Issues to Fix 
+          p.text-muted Please fix these issues to work smooth
+          p.text-muted Time Left: 30 mins
+          hr
+          p.text-muted
+            span.text-muted.color-bottom-txt
+              i.fa.fa-edit
+              |                                Lorem ipsum dolor sit amet, consectetur adipiscing elit gthn.
+              |                               Lorem ipsum dolor sit amet, consectetur adipiscing elit gthn.
+    .col-md-3.col-sm-12.col-xs-12
+      .panel.back-dash
+        i.fa.fa-dashboard.fa-3x
+        strong    SPEED
+        p.text-muted
+          | Lorem ipsum dolor sit amet, consectetur adipiscing sit ametsit amet elit ftr. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    .col-md-3.col-sm-12.col-xs-12
+      .panel
+        .main-temp-back
+          .panel-body
+            .row
+              .col-xs-6
+                i.fa.fa-cloud.fa-3x
+                |  Newyork City
+              .col-xs-6
+                .text-temp  10° 
+      .panel.panel-back.noti-box
+        span.icon-box.bg-color-green.set-icon
+          i.fa.fa-desktop
+        .text-box
+          p.main-text Display
+          p.text-muted Looking Good
+  // /. ROW
+  .row
+    .col-md-9.col-sm-12.col-xs-12
+      .panel.panel-default
+        .panel-heading
+          | Bar Chart Example
+        .panel-body
+          #morris-bar-chart
+    .col-md-3.col-sm-12.col-xs-12
+      .panel.panel-primary.text-center.no-boder.bg-color-green
+        .panel-body
+          i.fa.fa-bar-chart-o.fa-5x
+          h3 120 GB 
+        .panel-footer.back-footer-green
+          | Disk Space Available
+      .panel.panel-primary.text-center.no-boder.bg-color-red
+        .panel-body
+          i.fa.fa-edit.fa-5x
+          h3 20,000 
+        .panel-footer.back-footer-red
+          | Articles Pending
+  // /. ROW
+  .row
+    .col-md-3.col-sm-12.col-xs-12
+      .panel.panel-primary.text-center.no-boder.bg-color-green
+        .panel-body
+          i.fa.fa-comments-o.fa-5x
+          h4 200 New Comments 
+          h4 See All Comments  
+        .panel-footer.back-footer-green
+          i.fa.fa-rocket.fa-5x
+          |                             Lorem ipsum dolor sit amet sit sit, consectetur adipiscing elitsit sit gthn ipsum dolor sit amet ipsum dolor sit amet
+    .col-md-9.col-sm-12.col-xs-12
+      .panel.panel-default
+        .panel-heading
+          | Responsive Table Example
+        .panel-body
+          .table-responsive
+            table.table.table-striped.table-bordered.table-hover
+              thead
+                tr
+                  th #
+                  th First Name
+                  th Last Name
+                  th Username
+                  th User No.
+              tbody
+                tr
+                  td 1
+                  td Mark
+                  td Otto
+                  td @mdo
+                  td 100090
+                tr
+                  td 2
+                  td Jacob
+                  td Thornton
+                  td @fat
+                  td 100090
+                tr
+                  td 3
+                  td Larry
+                  td the Bird
+                  td @twitter
+                  td 100090
+                tr
+                  td 1
+                  td Mark
+                  td Otto
+                  td @mdo
+                  td 100090
+                tr
+                  td 2
+                  td Jacob
+                  td Thornton
+                  td @fat
+                  td 100090
+                tr
+                  td 3
+                  td Larry
+                  td the Bird
+                  td @twitter
+                  td 100090
+  // /. ROW
+  .row
+    .col-md-6.col-sm-12.col-xs-12
+      .chat-panel.panel.panel-default.chat-boder.chat-panel-head
+        .panel-heading
+          i.fa.fa-comments.fa-fw
+          |                             Chat Box
+          .btn-group.pull-right
+            button.btn.btn-default.btn-xs.dropdown-toggle(type='button', data-toggle='dropdown')
+              i.fa.fa-chevron-down
+            ul.dropdown-menu.slidedown
+              li
+                a(href='#')
+                  i.fa.fa-refresh.fa-fw
+                  | Refresh
+              li
+                a(href='#')
+                  i.fa.fa-check-circle.fa-fw
+                  | Available
+              li
+                a(href='#')
+                  i.fa.fa-times.fa-fw
+                  | Busy
+              li
+                a(href='#')
+                  i.fa.fa-clock-o.fa-fw
+                  | Away
+              li.divider
+              li
+                a(href='#')
+                  i.fa.fa-sign-out.fa-fw
+                  | Sign Out
+        .panel-body
+          ul.chat-box
+            li.left.clearfix
+              span.chat-img.pull-left
+                img.img-circle(src='/_res/img/1.png', alt='User')
+              .chat-body
+                strong Jack Sparrow
+                small.pull-right.text-muted
+                  i.fa.fa-clock-o.fa-fw
+                  | 12 mins ago
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+            li.right.clearfix
+              span.chat-img.pull-right
+                img.img-circle(src='/_res/img/2.png', alt='User')
+              .chat-body.clearfix
+                small.text-muted
+                  i.fa.fa-clock-o.fa-fw
+                  | 13 mins ago
+                strong.pull-right Jhonson Deed
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+            li.left.clearfix
+              span.chat-img.pull-left
+                img.img-circle(src='/_res/img/3.png', alt='User')
+              .chat-body.clearfix
+                strong Jack Sparrow
+                small.pull-right.text-muted
+                  i.fa.fa-clock-o.fa-fw
+                  | 14 mins ago
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+            li.right.clearfix
+              span.chat-img.pull-right
+                img.img-circle(src='/_res/img/4.png', alt='User')
+              .chat-body.clearfix
+                small.text-muted
+                  i.fa.fa-clock-o.fa-fw
+                  | 15 mins ago
+                strong.pull-right Jhonson Deed
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+            li.left.clearfix
+              span.chat-img.pull-left
+                img.img-circle(src='/_res/img/1.png', alt='User')
+              .chat-body
+                strong Jack Sparrow
+                small.pull-right.text-muted
+                  i.fa.fa-clock-o.fa-fw
+                  | 12 mins ago
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+            li.right.clearfix
+              span.chat-img.pull-right
+                img.img-circle(src='/_res/img/2.png', alt='User')
+              .chat-body.clearfix
+                small.text-muted
+                  i.fa.fa-clock-o.fa-fw
+                  | 13 mins ago
+                strong.pull-right Jhonson Deed
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+        .panel-footer
+          .input-group
+            input#btn-input.form-control.input-sm(type='text', placeholder='Type your message to send...')
+            span.input-group-btn
+              button#btn-chat.btn.btn-warning.btn-sm
+                | Send
+    .col-md-6.col-sm-12.col-xs-12
+      .panel.panel-default
+        .panel-heading
+          | Label Examples
+        .panel-body
+          span.label.label-default Default
+          span.label.label-primary Primary
+          span.label.label-success Success
+          span.label.label-info Info
+          span.label.label-warning Warning
+          span.label.label-danger Danger
+      .panel.panel-default
+        .panel-heading
+          | Donut Chart Example
+        .panel-body
+          #morris-donut-chart
+    // /. ROW
