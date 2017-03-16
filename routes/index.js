@@ -14,6 +14,11 @@ router.get('/', function (req, res, next) {
   peprResGlobals(req, res);
   res.render('index');
 });
+/* GET home page. */
+router.get('/index', function (req, res, next) {
+  peprResGlobals(req, res);
+  res.render('index');
+});
 /* GET Hello World page. */
 router.get('/ui', isAuthenticated, function (req, res) {
   peprResGlobals(req, res);

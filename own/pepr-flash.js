@@ -5,7 +5,7 @@
  */
 var format = require('util').format;
 var isArray = require('util').isArray;
-
+var debug = require('debug')('nodetest1:pepr-flash');
 
 /**
  * Expose `peprFlash()` function on requests.
@@ -16,6 +16,7 @@ var isArray = require('util').isArray;
 module.exports = function peprFlash(options) {
   options = options || {};
   var safe = (options.unsafe === undefined) ? true : !options.unsafe;
+  debug('init peprFlash!');
   return function(req, res, next) {
     if (req.flash && safe) { return next(); }
     req.peprFlash = _flash;
