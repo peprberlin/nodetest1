@@ -28,9 +28,9 @@
        ======================================*/
       $(window).bind("load resize", function () {
         if ($(this).width() < 768) {
-          $('div.sidebar-collapse').addClass('collapse')
+          $('div.sidebar-collapse').addClass('collapse');
         } else {
-          $('div.sidebar-collapse').removeClass('collapse')
+          $('div.sidebar-collapse').removeClass('collapse');
         }
       });
     },
@@ -45,7 +45,7 @@
             case 'error' : type = 'danger'; t = null; break;
             case 'success' : type = 'success';break;
             case 'warning' : type = 'warning';break;
-            case 'info' : 
+            case 'info' : /* falls through */
             default: type = 'warning';break;
           }
           console.log(index,t);
@@ -72,7 +72,7 @@
       mainApp.main_fun();
     }
 
-  }
+  };
   // Initializing ///
 
   $(document).ready(function () {
